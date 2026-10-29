@@ -1,0 +1,27 @@
+# ---- 构建产物 ----
+# exe 单独提交在仓库根目录；dist/ 和 build/ 是 PyInstaller 的中间输出，不入库
+dist/
+build/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---- 运行时产物 ----
+*.log
+config.json
+
+# ---- 抓包 / 截图（可能含账号、会话 cookie）----
+har/
+*.har
+*.pcap
+*.png
+*.jpg
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
